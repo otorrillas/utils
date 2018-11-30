@@ -1,15 +1,6 @@
-const isRelative = path => path.startsWith('../');
+import isAliases from './aliases';
 
-const aliases = [
-  'app',
-  'analytics',
-  'services',
-  'store',
-  'styles',
-  'utils',
-  'views'
-];
-const isAliases = value => aliases.indexOf(value) !== -1;
+const isRelative = path => path.startsWith('../');
 
 const removeRelatives = (str, pattern = '..') => {
   const parts = str.split('/');
