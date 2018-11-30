@@ -1,22 +1,27 @@
-// Press ctrl+space for code completion
-
 const isRelative = path => path.startsWith('../');
 
-const aliases = ['app', 'analytics', 'services', 'store', 'styles', 'utils', 'views'];
+const aliases = [
+  'app',
+  'analytics',
+  'services',
+  'store',
+  'styles',
+  'utils',
+  'views'
+];
 const isAliases = value => aliases.indexOf(value) !== -1;
 
 const removeRelatives = (str, pattern = '..') => {
   const parts = str.split('/');
   let result = [];
 
-  for (let i = 0; i < parts.length; i++) {
-    if (parts[i] !== pattern) {
-      result.push(parts[i]);
+  for (const part of parts) {
+    if (part !== pattern) {
+      result.push(part);
     }
   }
 
   result = result.join('/').toString();
-  console.log(result);
   return result;
 };
 
@@ -29,7 +34,7 @@ export default function transformer(file, api) {
       const sourcePath = node.value.source.value;
 
       if (isRelative(sourcePath)) {
-        const resultPath = removeRelatives(sourcePath, '..');
+        const resultPath = removeRelatives(sourcePath);
         const splittedRes = resultPath.split('/');
         const firstWord = splittedRes[0];
 
