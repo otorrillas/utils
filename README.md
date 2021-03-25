@@ -2,6 +2,20 @@
 
 Utils that help my everyday life
 
+## codemods
+
+`jscodeshift` codemods to help with migrations and code refactors:
+
+- `relativePaths`: remove relative paths for specified aliases
+
+## files
+
+Some file utils:
+
+- `output-files-with-prefix`: outputs all files in a directory with a prefix
+- `rename_spaces_to_underscores`: renames files with spaces to underscores
+  (example: `Hello World.png` to `Hello_World.png`)
+
 ## git
 
 Some git utilities:
@@ -10,9 +24,3 @@ Some git utilities:
 - `prune`: removes already merged branches and remotely removed branches
 - `rebase-all`: rebases all defined branches in line `#1` against `master`
 - `rename`: renames a branch from `$1` to `$2` argument (including remotely)
-
-## codemods
-
-`jscodeshift` codemods to help with migrations and code refactors:
-
-- `relativePaths`: remove relative paths for specified aliases
