@@ -1,0 +1,14 @@
+[user]
+	name = Oriol Torrillas
+	email = otorrillas@gmail.com
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+[core]
+	editor = code --wait
+[diff]
+    tool = default-difftool
+[difftool "default-difftool"]
+    cmd = code --wait --diff $LOCAL $REMOTE

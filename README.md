@@ -24,3 +24,7 @@ Some git utilities:
 - `prune`: removes already merged branches and remotely removed branches
 - `rebase-all`: rebases all defined branches in line `#1` against `master`
 - `rename`: renames a branch from `$1` to `$2` argument (including remotely)
+
+## dotenv
+
+Used to sync configs between different machines
