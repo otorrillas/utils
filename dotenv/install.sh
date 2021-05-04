@@ -21,7 +21,4 @@ brew install thefuck
 # apply configs to $HOME
 CURRENT_DIR=$(dirname "$0")
 
-/bin/cp $CURRENT_DIR/.zshenv $HOME/.zshenv
-/bin/cp $CURRENT_DIR/.zshrc $HOME/.zshrc
-/bin/cp $CURRENT_DIR/.npmrc $HOME/.npmrc
-/bin/cp $CURRENT_DIR/.npmrc $HOME/.gitconfig
+/bin/cp $CURRENT_DIR/.zshenv .zshrc .npmrc .gitconfig $HOME/
