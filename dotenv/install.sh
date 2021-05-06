@@ -12,6 +12,7 @@ brew install --cask iterm2
 brew install git-lfs
 brew install --cask visual-studio-code
 brew install --cask postman
+brew install thefuck
 
 ## browsers
 brew install --cask firefox
@@ -24,8 +25,6 @@ brew install --cask rectangle
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
 
-## thefuck: https://github.com/nvbn/thefuck
-brew install thefuck
 
 # ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -35,7 +34,9 @@ git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+# brew cleanup
+brew cleanup
+
 # apply configs to $HOME
 CURRENT_DIR=$(dirname "$0")
-
 /bin/cp $CURRENT_DIR/.zshenv .zshrc .npmrc .gitconfig $HOME/
