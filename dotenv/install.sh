@@ -11,7 +11,6 @@ brew install --cask iterm2
 ## dev tools
 brew install git-lfs
 brew install --cask visual-studio-code
-brew install --cask postman
 brew install thefuck
 
 ## browsers
