@@ -12,4 +12,4 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 # apply configs to $HOME
 CURRENT_DIR=$(dirname "$0")
-/bin/cp $CURRENT_DIR/.zshenv .zshrc .npmrc .gitconfig $HOME/
+/bin/cp $CURRENT_DIR/.zshenv .zshrc $HOME/
