@@ -20,6 +20,7 @@ brew install --cask firefox
 ## apps
 brew install --cask spotify
 brew install --cask rectangle
+brew install --cask raycast
 
 ## Fira code: https://github.com/tonsky/FiraCode/wiki/Installing
 brew tap homebrew/cask-fonts
