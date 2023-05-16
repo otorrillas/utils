@@ -13,6 +13,7 @@ brew install git
 brew install git-lfs
 brew install --cask visual-studio-code
 brew install thefuck
+brew install gum
 
 ## browsers
 brew install --cask firefox
@@ -25,7 +26,6 @@ brew install --cask raycast
 ## Fira code: https://github.com/tonsky/FiraCode/wiki/Installing
 brew tap homebrew/cask-fonts
 brew install --cask font-fira-code
-
 
 # ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
