@@ -14,6 +14,7 @@ brew install git-lfs
 brew install --cask visual-studio-code
 brew install thefuck
 brew install gum
+brew install fzf
 
 ## browsers
 brew install --cask firefox
@@ -34,6 +35,7 @@ brew install zsh-syntax-highlighting
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
 
 # brew cleanup
 brew cleanup
